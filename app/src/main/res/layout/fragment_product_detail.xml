@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/productDetailPreviewImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/preview_missing" />
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:paddingBottom="50dp"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/productDetailSectionTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Descripcion"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/productDetailSectionDvd"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/productDetailSectionContentTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textSize="16dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                android:gravity="start|fill_horizontal" />
+
+            <Button
+                android:id="@+id/productDetailAddToCartButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="3dp"
+                android:text="Agregar al carrito"
+                android:background="#000"
+                android:backgroundTint="#000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

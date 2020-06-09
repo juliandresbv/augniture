@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:clipChildren="false" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:elevation="@dimen/top_app_bar_elevation" >
+
+            <LinearLayout
+                android:id="@+id/upperTopAppBarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Here goes the upper content of the top app bar -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lowerTopAppBarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <!-- Here goes the lower content of the top app bar -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/content_main" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        app:backgroundTint="@color/colorBackground"
+        app:elevation="@dimen/bottom_app_bar_elevation"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="0dp"
+        app:fabCradleVerticalOffset="0dp"
+        app:hideOnScroll="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/arBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:backgroundTint="@color/colorBackground"
+        android:foreground="@android:color/transparent"
+        android:foregroundTint="@android:color/transparent"
+        android:src="@drawable/ic_photo_no_selected"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="add"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        app:layout_anchor="@id/bottomAppBar"
+        app:rippleColor="@android:color/transparent"
+        app:layout_dodgeInsetEdges="top"
+        app:layout_insetEdge="none" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -5,5 +5,4 @@ Augniture aims to connect small and medium retail sellers of decorative items, c
 
 ### Wiki
 
-La documentación relacionada con el proceso de desarrollo del
-proyecto puede ser encontrada en [aquí](https://gitlab.com/isis3510_202010_team21/wiki/-/wikis/home).
+The documentation related to the design and development process can be found [here](https://gitlab.com/isis3510_202010_team21/wiki/-/wikis/home).

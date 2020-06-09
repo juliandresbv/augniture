@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#000" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <!--
+            <ImageView
+                android:src=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+            -->
+
+            <!-- Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Nombre"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeColor="#FFF"
+                android:textColorHint="#FFF"
+                style="@style/Widget.App.TextInputLayout" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerNameTxtInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFF"
+                    android:textColorHighlight="#FFF"
+                    android:maxLength="70"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Email"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeColor="#FFF"
+                android:textColorHint="#FFF"
+                style="@style/Widget.App.TextInputLayout" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerEmailTxtInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#FFF"
+                    android:textColorHighlight="#FFF"
+                    android:maxLength="70"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Contraseña"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeColor="#FFF"
+                android:textColorHint="#FFF"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_eye"
+                app:passwordToggleTint="#FFF"
+                style="@style/Widget.App.TextInputLayout" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerPasswordTxtInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="#FFF"
+                    android:textColorHighlight="#FFF"
+                    android:maxLength="30"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp" >
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:text="Registrar"
+                    android:textColor="#000"
+                    android:enabled="false"
+                    style="@style/Widget.App.Button" />
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/google_register_button"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="23dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="¿Ya tienes cuenta aún?, "
+                        android:textColor="#FFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/linkSignIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ingresa"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:textSize="16dip" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

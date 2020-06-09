@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FEE7F2</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBorders">#7F7F7F</color>
+    <color name="colorOnSecondary">#FEE7F2</color>
+    <color name="colorSecondary">#000000</color>
+
+    <color name="gray">#7F7F7F</color>
+
+    <!-- TextInputLayout default_box_stroke_color -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FFF</color>
+
+    <!-- Snackbar colors -->
+    <color name="snackbarError">#FF6138</color>
+    <color name="snackbarSuccess">#77B3D9</color>
+    <color name="snackbarWarning">#FFC231</color>
+
+</resources>

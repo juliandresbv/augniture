@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center|start"
+            android:id="@+id/productCategoryItemTitleCV"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingHorizontal="10dp"
+            android:text="Categoria"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/productCategoryItemPreviewImageCV"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/preview_missing" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

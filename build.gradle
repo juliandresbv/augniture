@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        compile_sdk_version = 28
+        min_sdk_version = 24
+        target_sdk_version = 24
+
+        android_core_ktx_version = "1.2.0"
+        navigation_fragment_version = "2.2.1"
+        coordinator_layout_version = "1.1.0"
+        androidx_test_junit_version = "1.1.1"
+        androidx_test_espresso_version = "3.2.0"
+
+        firebase_coroutines_support_version = "1.3.5"
+        firebase_common_version = "19.3.0"
+        firebase_firestone_version = "21.4.2"
+        room_version = "2.2.5"
+
+        lifecycle_version = "2.2.0"
+        arch_version = "2.1.0"
+        coroutines_android_version = "1.3.5"
+
+        cardview_version = "28.0.0"
+
+        glide_version = "4.11.0"
+
+        fragment_ktx_version = "1.2.4"
+
+        firebase_auth_version = "19.3.0"
+        gps_auth_version = "18.0.0"
+
+        ev_version = "1.0.1"
+
+        amplitude_version = "2.23.2"
+
+        leak_canary_version = "2.3"
+    }
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath 'com.google.gms:google-services:4.3.3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.MainActivity" >
+
+    <ImageView
+        android:id="@+id/productDetailTopAppBarBackButtonImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="14dp"
+        android:src="@drawable/ic_back"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/productDetailTopAppBarTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginVertical="18dp"
+        android:gravity="end"
+        android:layout_weight="1"
+        android:fontFamily="@font/noto_sans"
+        android:text="Fragment title"
+        android:textColor="@color/colorSecondary"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <ImageButton
+        android:id="@+id/productDetailTopAppBarLikeButtonImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:backgroundTint="@null"
+        android:scaleType="centerInside"
+        android:layout_marginRight="15dp"
+        android:layout_marginVertical="14dp"
+        android:src="@drawable/ic_like_border" />
+
+</LinearLayout>

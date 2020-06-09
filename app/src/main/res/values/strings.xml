@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Augniture</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_search">Búsqueda</string>
+    <string name="title_favourites">Favoritos</string>
+    <string name="title_cart">Carrito</string>
+    <string name="title_augmented">Augniture</string>
+    <string name="button_highlights">DESTACADOS</string>
+    <string name="button_categories">CATEGORÍAS</string>
+    <string name="Total">Total</string>
+    <string name="product_preview">Resumen producto</string>
+
+</resources>
